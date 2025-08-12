@@ -1,0 +1,21 @@
+module(name = "minimal_rules_img_example")
+
+bazel_dep(name = "rules_img", version = "0.1.4")
+
+pull = use_repo_rule("@rules_img//img:pull.bzl", "pull")
+
+pull(
+    name = "alpine",
+    digest = "sha256:4bcff63911fcb4448bd4fdacec207030997caf25e9bea4045fa6c8c44de311d1",
+    registry = "index.docker.io",
+    repository = "library/alpine",
+    tag = "3",
+)
+
+pull(
+    name = "ubuntu",
+    digest = "sha256:1ec65b2719518e27d4d25f104d93f9fac60dc437f81452302406825c46fcc9cb",
+    registry = "index.docker.io",
+    repository = "library/ubuntu",
+    tag = "22.04",
+)
