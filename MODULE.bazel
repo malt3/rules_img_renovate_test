@@ -14,8 +14,8 @@ pull(
 
 pull(
     name = "ubuntu",
-    digest = "sha256:1ec65b2719518e27d4d25f104d93f9fac60dc437f81452302406825c46fcc9cb",
+    digest = "sha256:66460d557b25769b102175144d538d88219c077c678a49af4afca6fbfc1b5252",
     registry = "index.docker.io",
     repository = "library/ubuntu",
-    tag = "22.04",
+    tag = "24.04",
 )
